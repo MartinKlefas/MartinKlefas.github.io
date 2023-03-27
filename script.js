@@ -5,7 +5,7 @@ document.getElementById('image-form').addEventListener('submit', async (e) => {
     const matches = document.getElementById('matches').value;
     
     const formData = new FormData();
-    formData.append('upload_file', image);
+    formData.append('file', image);
     formData.append('matches', matches);
     
     const response = await fetch('https://13.40.82.186/predict/similar_images', {
