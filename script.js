@@ -19,7 +19,7 @@ document.getElementById('image-form').addEventListener('submit', async (e) => {
     
     data.similar_images.forEach(imageId => {
         const img = document.createElement('img');
-        img.src = imageId; // Assuming the image path is the same as the imageId
+        img.src = `images/${imageId}.jpg`; 
         imageGrid.appendChild(img);
     });
 });
