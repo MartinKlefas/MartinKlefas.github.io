@@ -72,7 +72,7 @@
             const matches = document.getElementById('matches').value;
 
             const formData = new FormData();
-            formData.append('image', imageFile);
+            formData.append('files', imageFile);
             formData.append('matches', matches);
 
             const xhr = new XMLHttpRequest();
