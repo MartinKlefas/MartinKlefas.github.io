@@ -33,6 +33,9 @@
             color: white;
             margin: 0;
         }
+        span.blockspam {
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -72,8 +75,12 @@
     </div>
     <div class="footer">
         <p>&copy; 2023 Martin Klefas-Stennett. All rights reserved.</p>
-        <p>Email: martin.klefas@hotmail.com | LinkedIn: <a href="https://www.linkedin.com/in/martin-klefas-stennett/" target="_blank">https://www.linkedin.com/in/martin-klefas-stennett/</a></p>
+        <p>Email: <a id="contact" href=""><span class="blockspam" aria-hidden="true">PLEASE GO AWAY!</span>martin.klefas@<!-- sdalsiubdlasbdkjypcs -->hotmail.com</a> | LinkedIn: <a href="https://www.linkedin.com/in/martin-klefas-stennett/" target="_blank">https://www.linkedin.com/in/martin-klefas-stennett/</a></p>
     </div>
-    
+    <script>
+        var encEmail = "bWFydGluLmtsZWZhc0Bob3RtYWlsLmNvbQ==";
+        const form = document.getElementById("contact");
+        form.setAttribute("href", "mailto:".concat(atob(encEmail)));
+    </script>
     </body>
     </html>
