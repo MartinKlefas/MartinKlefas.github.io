@@ -76,7 +76,7 @@
             formData.append('matches', matches);
 
             const xhr = new XMLHttpRequest();
-            xhr.open('POST', 'https://thingproxy.freeboard.io/fetch/https://13.40.82.186/predict/similar_images', true);
+            xhr.open('POST', 'https://13.40.82.186/predict/similar_images', true);
             xhr.setRequestHeader('Content-Type', 'multipart/form-data');
             xhr.responseType = 'json';
             xhr.withCredentials = false;
