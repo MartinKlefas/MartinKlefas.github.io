@@ -86,8 +86,12 @@ body {
   
   
   .calendar-icon {
-    font-size: 20px;
-    margin-right: 5px;
+    content: url('calendar_icon.png');
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 3px;
+    vertical-align: middle;
   }
   .contact-info a {
     color: #ffffff;
