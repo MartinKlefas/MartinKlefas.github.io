@@ -34,14 +34,14 @@ body {
   .left-column {
     width: 33%;
     background-color: #ffffff;
-    padding: 20px;
-    border-radius: 5px;
+    padding: 10px;
+    border-radius: 3px;
   }
   .right-column {
-    width: 63%;
+    width: 61%;
     background-color: #ffffff;
-    padding: 20px;
-    border-radius: 5px;
+    padding: 10px;
+    border-radius: 3px;
   }
   
   .left-column {
@@ -88,8 +88,8 @@ body {
   .calendar-icon {
     content: url('calendar_icon.png');
     display: inline-block;
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
     margin-right: 3px;
     vertical-align: middle;
   }
