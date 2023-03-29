@@ -95,8 +95,7 @@ body {
   .contact-info a:hover {
     color: #bdc3c7;
   }
-  .education a {
-    color: inherit;
+  .education a {    
     text-decoration: none;
   }
   
