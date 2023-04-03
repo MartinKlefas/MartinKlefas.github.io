@@ -47,6 +47,8 @@ a:hover {
   text-decoration: underline;
 }
 
+
+
 @media screen and (max-width: 600px) {
   body {
     padding: 10px;
@@ -59,4 +61,7 @@ a:hover {
   h2 {
     font-size: 22px;
   }
+
 }
+
+
