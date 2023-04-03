@@ -95,13 +95,10 @@ body {
   .contact-info a:hover {
     color: #bdc3c7;
   }
-  .education a {    
-    text-decoration: none;
-  }
-  
-  .education a:hover {
-    color: #2ecc71;
-    text-decoration: underline;
+  a,
+  a:visited {
+  color: blue;
+  text-decoration: none;
   }
 
   .skill-item {
@@ -144,6 +141,22 @@ body {
     flex-wrap: nowrap;
   }
 
+  .skills-used {
+    display: block;
+    margin-left: 2s5px;
+    font-size: 0.9em;
+    font-style: italic;
+  }
+  
+  /* Hide the second-page header on the screen */
+  .second-page-header {
+    display: none;
+  }
+  
+  .page-break {
+    display: none;
+  }
+
   @media print {
     .skill-progress {
       background-color: #d3d3d3;
@@ -165,6 +178,25 @@ body {
       flex-wrap: nowrap;
       width: 100%;
     }
+    /* Show the second-page header only when printed */
+  .second-page-header {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    /* Use the following to position the header on the second page */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* Make sure the header has a higher z-index than other content */
+    z-index: 1000;
+  }
+  .page-break {
+    display: block;
+    page-break-after: always;
+  }
   }
   
   
