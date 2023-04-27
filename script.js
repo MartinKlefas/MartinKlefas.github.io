@@ -8,7 +8,7 @@ document.getElementById('image-form').addEventListener('submit', async (e) => {
     formData.append('image', image);
     formData.append('matches', matches);
     
-    const response = await fetch('https://13.40.82.186/predict/similar_images', {
+    const response = await fetch('https://13.42.21.224/predict/similar_images', {
         method: 'POST',
         body: formData,
     });
