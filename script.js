@@ -8,9 +8,8 @@ document.getElementById('image-form').addEventListener('submit', async (e) => {
     formData.append('image', image);
     formData.append('matches', matches);
     
-    const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
-    const targetUrl = 'https://13.42.21.224/predict/similar_images';
-    const response = await fetch('https://13.42.21.224/predict/similar_images', {
+
+    const response = await fetch('https://dev.martinklefas.uk/predict/similar_images', {
         method: 'POST',
         body: formData,
 
